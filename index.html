@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demonstration document for machine-readable HTML features.">
+    <meta name="author" content="Ravi Shankar">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Machine-Readable HTML Demo">
+    <meta property="og:description" content="A demonstration document for machine-readable HTML features.">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="canonical" href="https://example.com/machine-readable-demo">
+    <title>Machine-Readable HTML Demo</title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Wireless Headphones",
+        "description": "Premium noise-cancelling headphones.",
+        "offers": {
+            "@type": "Offer",
+            "price": "149.99",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <template id="product-card-template">
+        <h3>Product Name</h3>
+        <p>$0.00</p>
+    </template>
+
+    <details>
+        <summary>Shipping Details</summary>
+        <p>Orders ship within 2 business days.</p>
+    </details>
+
+    <dialog open>
+        <p>Your item has been added to the cart.</p>
+    </dialog>
+
+    <section hidden>
+        <p>This promotional section is not currently active.</p>
+    </section>
+
+    <section inert>
+        <input type="text" placeholder="Disabled during maintenance">
+        <button>Submit</button>
+    </section>
+
+    <button popovertarget="tip">Show Tip</button>
+    <div id="tip" popover>
+        <p>You can update your preferences at any time from your account settings.</p>
+    </div>
+
+    <article data-product-id="P2048" data-category="Electronics" data-price="149.99">
+        <h3>Wireless Headphones</h3>
+        <p>Premium noise-cancelling headphones.</p>
+    </article>
+
+</body>
+</html>
